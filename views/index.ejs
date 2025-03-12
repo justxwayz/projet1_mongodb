@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jours Fériés</title>
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <h1>Liste des Jours Fériés</h1>
+        <ul class="holiday-list">
+            <% holidays.forEach(holiday => { %>
+                <li>
+                    <strong><%= holiday.nom_jour_ferie %></strong> <%= new Date(holiday.date).toLocaleDateString("fr-FR") %>
+                    <a href="/edit/<%= holiday._id %>">Modifier</a>
+                    <form action="/delete/<%= holiday._id %>" method="POST" style="display:inline;">
+                        <button type="submit">Supprimer</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/add">Ajouter un Jour Férié</a>
+    </body>
+</html>

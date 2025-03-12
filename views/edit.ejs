@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modifier un Jour Férié</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <h1>Modifier un Jour Férié</h1>
+        <form action="/edit/<%= holiday._id %>" method="POST">
+            <label for="nom_jour_ferie">Nom :</label>
+            <input type="text" id="nom_jour_ferie" name="nom_jour_ferie" value="<%= holiday.nom_jour_ferie %>" required>
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" value="<%= holiday.date %>" required>
+            <button type="submit">Modifier</button>
+        </form>
+        <a href="/">Retour</a>
+    </body>
+</html>
