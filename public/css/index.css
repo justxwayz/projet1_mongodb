@@ -1,0 +1,86 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Titre */
+h1 {
+    color: #333;
+}
+
+/* Liste des jours fériés */
+.holiday-list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.holiday-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Alternance de couleur */
+.holiday-list li:nth-child(odd) {
+    background: #e3f2fd;
+}
+
+/* Boutons et liens */
+a, button {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin: 5px;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+}
+
+a:active, button:active {
+    background-color: #004494;
+}
+
+/* Alignement des boutons Modifier/Supprimer */
+.holiday-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Formulaire de suppression intégré */
+.holiday-actions form {
+    display: inline;
+}
+
+/* Lien Ajouter */
+.add-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #28a745;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}

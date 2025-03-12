@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajouter un Jour Férié</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <h1>Ajouter un Jour Férié</h1>
+        <form action="/add" method="POST">
+            <label for="nom_jour_ferie">Nom :</label>
+            <input type="text" id="nom_jour_ferie" name="nom_jour_ferie" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="annee">Année :</label>
+            <input type="number" id="annee" name="annee" required>
+
+            <label for="zone">Zone :</label>
+            <select id="zone" name="zone">
+                <option value="Polynésie Française">Polynésie Française</option>
+                <option value="France Métropolitaine">France Métropolitaine</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Martinique">Martinique</option>
+            </select>
+
+            <button type="submit">Ajouter</button>
+        </form>
+        <a href="/">Retour</a>
+    </body>
+</html>
